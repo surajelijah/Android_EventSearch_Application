@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C0C0C0"
+    android:backgroundTintMode="add"
+    tools:context=".SearchFragment"
+    android:id="@+id/search_fragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="@color/black"
+        app:cardCornerRadius="35dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Keyword*"
+                android:textColor="@color/title_green"
+                android:textSize="20sp" />
+
+            <!--<EditText
+                android:id="@+id/keyword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/title_green"
+                android:hint="Enter the Keyword"
+                android:inputType="text"
+                android:textColor="@color/white"
+                android:textColorHint="#C0C0C0"
+                android:textSize="17sp"></EditText>-->
+
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter the Keyword"
+                android:textColor="@color/white"
+                android:textColorHint="#C0C0C0"
+                android:textSize="17sp"
+                android:inputType="text"
+                android:backgroundTint="@color/title_green"
+                android:id="@+id/auto_complete">
+
+            </AutoCompleteTextView>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Distance (Miles)*"
+                android:textColor="@color/title_green"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/distance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/title_green"
+                android:hint="10"
+                android:inputType="number"
+                android:textColor="@color/white"
+                android:textColorHint="#C0C0C0"
+                android:textSize="17sp"></EditText>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Category*"
+                android:textColor="@color/title_green"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/categories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                >
+
+            </Spinner>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Location*"
+
+                    android:textColor="@color/title_green"
+                    android:textSize="20sp" />
+
+
+                <Switch
+                    android:id="@+id/auto_detection"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:checked="false"
+                    android:gravity="end"
+                    android:text="Auto-detect"
+                    android:textColor="#C0C0C0"
+                    android:thumbTint="#C0C0C0"
+                    android:trackTint="@color/title_green"
+
+                    ></Switch>
+
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/title_green"
+                android:hint="Enter the Location"
+                android:inputType="text"
+                android:textColor="@color/white"
+                android:textColorHint="#C0C0C0"
+                android:textSize="17sp"></EditText>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <Button
+                    android:id="@+id/search"
+                    android:layout_width="155dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:backgroundTint="@color/title_green"
+                    android:text="Search"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"></Button>
+
+                <Button
+                    android:id="@+id/clear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:backgroundTint="#FF5722"
+                    android:text="Clear"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"></Button>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</FrameLayout>
