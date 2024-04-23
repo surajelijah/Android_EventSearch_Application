@@ -21,4 +21,8 @@ In this project we have used
   - Twitter APIs
 
 The NodeJS Backend was deployed in Google Cloud
+
+Different WebApp Implementations of the App
+- Angular WebApp - https://github.com/surajelijah/Angular_Web_Application
+- Python Django WebApp - https://github.com/surajelijah/Django_Python_Web_Application
   
